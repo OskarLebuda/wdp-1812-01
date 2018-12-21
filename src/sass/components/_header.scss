@@ -68,43 +68,58 @@ header {
     .cart {
 
       .cart-box {
-        display: inline-block;
+        display: flex;
+        justify-content: flex-end;
         position: relative;
         color: #ffffff;
+        flex-wrap: nowrap;
 
         .cart-icon {
           background-color: $primary;
           width: 55px;
           height: 50px;
           border-radius: 3px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           font-size: 20px;
+          line-height: 50px;
 
           i {
-            margin-right: 5px;
+            margin-right: 20px;
           }
         }
 
+        .cart-counter-block {
+          background-color: #d58e32;
+          height: 11px;
+          width: 50%;
+        }
+
+        .cart-counter-block--top {
+          border-radius: 0 3px 0 0;
+        }
+
+        .cart-counter-block--bottom {
+          border-radius: 0 0 3px 0;
+        }
+
+        .cart-counter-wrapper {
+          margin-left: -14px;
+        }
+
         .cart-counter {
-          width: 28px;
-          height: 27px;
+          height: 28px;
           border-radius: 14px;
           background-color: $header-bg;
-          display: flex;
           align-items: center;
-          justify-content: center;
           font-size: 14px;
           color: rgb(224, 227, 237);
-          position: absolute;
-          top: 50%;
-          right: 0;
-          transform: translate(50%, -50%);
+          line-height: 28px;
+          padding-left: 5px;
+          min-width: 28px;
+          text-align: center;
         }
 
         &:hover {
-          .cart-icon {
+          .cart-icon, .cart-counter-block {
             background-color: lighten($primary, 10%);
           }
         }

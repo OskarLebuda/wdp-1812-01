@@ -81,3 +81,6 @@ typings/
 
 # folder with project's mockups (PSD files)
 mockups
+
+# IntelliJ IDEA config files
+.idea
