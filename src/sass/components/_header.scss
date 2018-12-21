@@ -52,7 +52,7 @@ header {
         margin: 0;
         font-size: 17px;
         line-height: 42px;
-        color: rgb(216,216,216);
+        color: rgb(216, 216, 216);
         font-weight: 500;
 
         i {
@@ -96,7 +96,7 @@ header {
           align-items: center;
           justify-content: center;
           font-size: 14px;
-          color: rgb(224,227,237);
+          color: rgb(224, 227, 237);
           position: absolute;
           top: 50%;
           right: 0;
@@ -113,7 +113,7 @@ header {
   }
 
   .menu-bar {
-    box-shadow: 2px 3.464px 6px rgba(1,2,2,0.2);
+    box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
     background-color: #ffffff;
 
     .container > .row {
@@ -124,17 +124,23 @@ header {
       display: flex;
       align-self: stretch;
 
-      ul {
+      ul.main-menu {
         margin: 0;
         padding: 0;
         display: flex;
 
-        li {
+        > li {
           list-style: none;
           display: flex;
           align-items: stretch;
 
-          a {
+          &:hover {
+            .submenu {
+              display: flex;
+            }
+          }
+
+          > a {
             color: $text-color;
             text-transform: uppercase;
             font-size: 12px;
@@ -157,6 +163,53 @@ header {
               border-color: $text-color;
             }
           }
+        }
+      }
+    }
+
+    .submenu {
+      display: none;
+      background-color: #363636;
+      border-radius: 0;
+      margin: 0;
+      background-clip: unset;
+      position: absolute;
+      top: 100%;
+      right: 15px;
+      z-index: 1000;
+      float: left;
+      font-size: 14px;
+
+      .submenu-heading {
+        text-transform: uppercase;
+        border-bottom: 1px solid #b8b8b8;
+      }
+
+      ul {
+        list-style: none;
+        padding: 10px 0px 10px 20px;
+        &:last-of-type {
+          padding-right: 20px;
+        }
+      }
+
+      li {
+        display: block;
+        width: 130px;
+      }
+
+      a {
+        display: block;
+        color: #b8b8b8;
+        text-decoration: none;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+
+        &:hover {
+          text-decoration: none;
+          color: #ffffff;
+          background-color: $primary;
         }
       }
     }
