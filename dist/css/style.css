@@ -10323,17 +10323,20 @@ footer .bottom-bar {
         footer .bottom-bar .socialmedia ul li a:hover {
           color: #d58e32; }
 
-.btn-main, .btn-main-small {
+.btn-main,
+.btn-main-small {
   background-color: #2a2a2a;
   color: #ffffff;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px; }
-  .btn-main:not(.no-hover):hover, .btn-main-small:not(.no-hover):hover {
-    color: #ffffff !important;
-    background-color: #d58e32;
-    text-decoration: none; }
+
+.btn-main:not(.no-hover):hover,
+.btn-main-small:not(.no-hover):hover {
+  color: #ffffff !important;
+  background-color: #d58e32;
+  text-decoration: none; }
 
 .btn-main-small {
   font-size: 13px;
@@ -10348,9 +10351,10 @@ footer .bottom-bar {
   color: #2a2a2a;
   font-size: 13px;
   line-height: 22px; }
-  .btn-outline:hover {
-    background-color: #2a2a2a;
-    color: #ffffff; }
+
+.btn-outline:hover {
+  background-color: #2a2a2a;
+  color: #ffffff; }
 
 .feature-box {
   display: block;
