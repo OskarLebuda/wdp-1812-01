@@ -1,0 +1,15 @@
+%animate {
+  // in place of
+  // transition: all ease-in-out 250ms;
+  // added separate transitions to control the transition time and animation separately for each property
+  transition: background-color ease-in-out 250ms,
+  color ease-in-out 250ms,
+  visibility ease-in-out 250ms,
+  opacity ease-in-out 250ms,
+  border ease-in-out 250ms;
+
+}
+
+a {
+  @extend %animate;
+}
