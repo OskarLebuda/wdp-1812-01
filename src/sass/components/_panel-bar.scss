@@ -59,6 +59,15 @@
         }
       }
     }
+    // override default bootstrap settings
+    .nav-link {
+      border: unset;
+      border-color: unset;
+      background-color: transparent;
+      color: rgb(42,42,42);
+      border-radius: unset;
+      padding: unset;
+    }
   }
 
   .dots {
