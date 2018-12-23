@@ -151,7 +151,9 @@ header {
 
           &:hover {
             .submenu {
-              display: flex;
+              visibility: visible;
+              opacity: 1;
+
             }
           }
 
@@ -183,7 +185,10 @@ header {
     }
 
     .submenu {
-      display: none;
+      @extend %animate;
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
       background-color: #363636;
       border-radius: 0;
       margin: 0;
