@@ -5,6 +5,54 @@
 // and abandoned it in Bootstrap v3 because it breaks lots of third-party widgets (including Google Maps)
 // which weren't expecting the images within themselves to be involuntarily resized.
 // See also https://github.com/twbs/bootstrap/issues/18178
+.product-img-1 {
+  background-image: url("https://images.pexels.com/photos/963486/pexels-photo-963486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-2 {
+  background-image: url("https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); }
+
+.product-img-3 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-4 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-5 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-6 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-7 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-8 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-9 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-10 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-11 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-12 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-13 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-14 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-15 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
+.product-img-16 {
+  background-image: url("https://images.pexels.com/photos/707196/pexels-photo-707196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+
 .img-fluid {
   @include img-fluid;
 }

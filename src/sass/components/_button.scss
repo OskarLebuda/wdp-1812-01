@@ -1,33 +1,31 @@
-.btn-main,
-.btn-main-small {
-  background-color: #2a2a2a;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  padding: 10px 30px;
+.btn-main, .btn-main-small {
+	background-color: #2a2a2a;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	padding: 10px 30px;
 }
-.btn-main:not(.no-hover):hover,
-.btn-main-small:not(.no-hover):hover {
-  color: #ffffff !important;
-  background-color: #d58e32;
-  text-decoration: none;
+.btn-main:not(.no-hover):hover, .btn-main-small:not(.no-hover):hover {
+	color: #ffffff !important;
+	background-color: #d58e32;
+	text-decoration: none;
 }
 .btn-main-small {
-  font-size: 13px;
-  line-height: 24px;
-  padding: 5px 10px;
-  font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+	padding: 5px 10px;
+	font-weight: 400;
 }
 .btn-outline {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #2a2a2a;
-  color: #2a2a2a;
-  font-size: 13px;
-  line-height: 22px;
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #2a2a2a;
+	color: #2a2a2a;
+	font-size: 13px;
+	line-height: 22px;
 }
 .btn-outline:hover {
-  background-color: #2a2a2a;
-  color: #ffffff;
+	background-color: #2a2a2a;
+	color: #ffffff;
 }
