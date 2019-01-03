@@ -2,7 +2,7 @@
   margin-bottom: 30px;
   
   .row > * {
-    border-bottom: 4px solid #e2e2e2;
+    border-bottom: 4px solid $bright-background-two;
   }
 
   .heading {
@@ -39,7 +39,7 @@
         font-weight: 600;
 
         a {
-          color: rgb(42,42,42);
+          color: $text-color;
           position: relative;
           text-decoration: none;
           font-size: 18px;
@@ -64,7 +64,7 @@
       border: unset;
       border-color: unset;
       background-color: transparent;
-      color: rgb(42,42,42);
+      color: $text-color;
       border-radius: unset;
       padding: unset;
     }
@@ -75,7 +75,7 @@
       margin: 0;
       padding: 0 0 0 1rem;
       list-style: none;
-      background-color: #ffffff;
+      background-color: $white;
       transform: translateY(15px);
 
       li {
@@ -87,7 +87,7 @@
           width: 13px;
           height: 13px;
           border-radius: 6px;
-          background-color: #e1e1e1;
+          background-color: $bright-background;
 
           &.active,
           &:hover {

@@ -12,7 +12,7 @@ header {
         line-height: 55px;
 
         a {
-          color: #ffffff;
+          color: $white;
           font-size: 13px;
 
           &:hover {
@@ -71,7 +71,7 @@ header {
         display: flex;
         justify-content: flex-end;
         position: relative;
-        color: #ffffff;
+        color: $white;
         flex-wrap: nowrap;
 
         .cart-icon {
@@ -88,7 +88,7 @@ header {
         }
 
         .cart-counter-block {
-          background-color: #d58e32;
+          background-color: $primary;
           height: 11px;
           width: 50%;
         }
@@ -129,7 +129,7 @@ header {
 
   .menu-bar {
     box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-    background-color: #ffffff;
+    background-color: $white;
 
     .container > .row {
       height: 84px;
@@ -163,14 +163,14 @@ header {
             text-decoration: none;
             display: flex;
             align-items: center;
-            border-top: 4px solid #ffffff;
+            border-top: 4px solid $white;
             font-weight: 500;
             letter-spacing: 1px;
 
             &:hover,
             &.active {
               background-color: $primary;
-              color: #ffffff;
+              color: $white;
               border-color: $primary;
             }
 
