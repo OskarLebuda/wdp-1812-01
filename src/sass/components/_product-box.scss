@@ -96,22 +96,22 @@
  	position: relative
  }
  .product-box .actions .price .old-price::after {
-  content: "";
-  display: inline-block;
-  width: 39px;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #292929
-}
-.product-box .price .btn-main-small {
-  transition: background-color .3s
-}
-.product-box:hover .price .btn-main-small {
-  color: #ffffff;
-  background-color: #d58e32
-}
+   content: "";
+ 	display: inline-block;
+ 	width: 39px;
+ 	height: 1px;
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	margin: auto;
+ 	background-color: #292929
+ }
+ .product-box .price .btn-main-small {
+ 	transition: background-color .3s
+ }
+ .product-box:hover .price .btn-main-small {
+ 	color: #ffffff;
+ 	background-color: #d58e32
+ }
