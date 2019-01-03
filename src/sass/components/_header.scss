@@ -59,7 +59,7 @@ header {
     }
 
     .phone-number {
-      @extend .text-right;
+      text-align: right;
       margin-top: 10px;
       p {
         margin: 0;
@@ -79,7 +79,7 @@ header {
     }
 
     .logo {
-      @extend .text-left;
+      text-align: left;
       img {
         width: 140px;
       }
@@ -292,14 +292,14 @@ header {
       }
 
       .phone-number {
-        text-align: left !important;
+        text-align: left;
         order: 1;
         font-size: 17px;
         margin-top: 0;
       }
 
       .logo {
-        text-align: center !important;
+        text-align: center;
         order: 2;
 
         img {
