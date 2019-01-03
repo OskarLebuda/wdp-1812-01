@@ -325,26 +325,26 @@ header {
 }
 
 @include media-breakpoint-up(md) {
-header {
-  .menu-bar {
-    .search {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
+  header {
+    .menu-bar {
+      .search {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
 
-    .submenu {
-    }
+      .submenu {
+      }
 
-    #menu-toggle {
-      display: none;
-    }
+      #menu-toggle {
+        display: none;
+      }
 
-    .menu-toggle--container {
-      display: none;
-    }
+      .menu-toggle--container {
+        display: none;
+      }
 
+    }
   }
-}
 }
 
 @include media-breakpoint-down(sm) {
@@ -380,7 +380,7 @@ header {
     }
 
     .menu-bar {
-      border: 1px solid red;
+
     }
 
     .menu {
