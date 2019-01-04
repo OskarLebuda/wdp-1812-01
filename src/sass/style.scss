@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixin_extend";
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
@@ -21,4 +22,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+a {
+  @extend %animate;
 }
