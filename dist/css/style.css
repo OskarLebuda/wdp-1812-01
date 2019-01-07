@@ -10537,7 +10537,10 @@ footer .bottom-bar {
       padding: 30px 15px 5px 15px; }
     .product-box .photo .buttons {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      opacity: 0; }
+    .product-box .photo:hover .buttons {
+      opacity: 1; }
   .product-box .content {
     text-align: center;
     padding: 20px; }
