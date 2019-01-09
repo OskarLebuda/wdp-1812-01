@@ -310,7 +310,6 @@ header {
   }
 }
 
-
 @include media-breakpoint-up(lg) {
   header {
     .menu-bar {
@@ -332,9 +331,6 @@ header {
         margin-bottom: 8px;
       }
 
-      .submenu {
-      }
-
       #menu-toggle {
         display: none;
       }
@@ -342,7 +338,6 @@ header {
       .menu-toggle--container {
         display: none;
       }
-
     }
   }
 }
@@ -379,10 +374,6 @@ header {
       }
     }
 
-    .menu-bar {
-
-    }
-
     .menu {
       position: absolute;
       right: 0;
@@ -415,15 +406,12 @@ header {
 
         li {
           width: 100%;
-
         }
-
       }
 
       li {
         flex-direction: column;
       }
-
 
     }
 
