@@ -88,7 +88,7 @@ header {
         }
 
         .cart-counter-block {
-          background-color: #d58e32;
+          background-color: $primary;
           height: 11px;
           width: 50%;
         }
@@ -189,7 +189,7 @@ header {
       display: flex;
       visibility: hidden;
       opacity: 0;
-      background-color: #363636;
+      background-color: $footer-bg;
       border-radius: 0;
       margin: 0;
       background-clip: unset;
