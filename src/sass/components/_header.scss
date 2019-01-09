@@ -75,6 +75,7 @@ header {
         flex-wrap: nowrap;
 
         .cart-icon {
+          @extend %animate;
           background-color: $primary;
           width: 55px;
           height: 50px;
@@ -88,6 +89,7 @@ header {
         }
 
         .cart-counter-block {
+          @extend %animate;
           background-color: $primary;
           height: 11px;
           width: 50%;
