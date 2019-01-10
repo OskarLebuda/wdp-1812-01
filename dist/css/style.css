@@ -10476,6 +10476,17 @@ footer .bottom-bar {
         text-align: left; }
       .post-box .cover .details .comments {
         text-align: right; }
+    @media (max-width: 320px) {
+      .post-box .cover {
+        text-align: left; } }
+    @media (max-width: 320px) {
+      .post-box .cover {
+        flex-direction: column; } }
+    @media (max-width: 1199.98px) and (min-width: 992px) {
+      .post-box .cover .date {
+        padding-right: 1px; }
+      .post-box .cover span {
+        display: block; } }
   .post-box .post-info {
     padding: 25px; }
     .post-box .post-info h5 {
