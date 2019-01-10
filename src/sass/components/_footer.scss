@@ -1,6 +1,6 @@
 footer {
   .footer-menu {
-    background-color: $footer-bg;
+    background-color: #363636;
     padding: 3rem 0;
 
     .menu-wrapper {
@@ -18,7 +18,10 @@ footer {
           a {
             font-size: 14px;
             line-height: 30px;
-            color: rgb(169,169,169);
+            color: rgb(169, 169, 169);
+            display: block;
+            margin-bottom: 7px;
+            margin-top: 7px;
 
             &:hover {
               color: #ffffff;
@@ -37,6 +40,12 @@ footer {
         display: inline-block;
       }
     }
+    @media (max-width: 320px) {
+      .container > .row > .col {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
   }
 
   .bottom-bar {
@@ -49,9 +58,12 @@ footer {
     .copyright {
       p {
         margin: 0;
-        color: rgb(169,169,169);
+        color: rgb(169, 169, 169);
         font-size: 14px;
         line-height: 26px;
+      }
+      @media (max-width: 991.98px) {
+        order: 2;
       }
     }
 
@@ -66,14 +78,17 @@ footer {
           margin-left: 1rem;
 
           a {
-            color: rgb(169,169,169);
+            color: #a9a9a9;
             text-decoration: none;
 
             &:hover {
-              color: $primary;
+              color: #d58e32;
             }
           }
         }
+      }
+      @media (max-width: 991.98px) {
+        order: 3;
       }
     }
   }

@@ -10291,7 +10291,10 @@ footer .footer-menu {
     footer .footer-menu .menu-wrapper ul li a {
       font-size: 14px;
       line-height: 30px;
-      color: darkgray; }
+      color: darkgray;
+      display: block;
+      margin-bottom: 7px;
+      margin-top: 7px; }
       footer .footer-menu .menu-wrapper ul li a:hover {
         color: #ffffff; }
   footer .footer-menu .payment-methods {
@@ -10300,6 +10303,10 @@ footer .footer-menu {
     list-style: none; }
     footer .footer-menu .payment-methods li {
       display: inline-block; }
+  @media (max-width: 320px) {
+    footer .footer-menu .container > .row > .col {
+      max-width: 100%;
+      flex: 0 0 100%; } }
 
 footer .bottom-bar {
   background-color: #2a2a2a; }
@@ -10310,6 +10317,9 @@ footer .bottom-bar {
     color: darkgray;
     font-size: 14px;
     line-height: 26px; }
+  @media (max-width: 991.98px) {
+    footer .bottom-bar .copyright {
+      order: 2; } }
   footer .bottom-bar .socialmedia ul {
     margin: 0;
     padding: 0;
@@ -10318,10 +10328,13 @@ footer .bottom-bar {
       display: inline-block;
       margin-left: 1rem; }
       footer .bottom-bar .socialmedia ul li a {
-        color: darkgray;
+        color: #a9a9a9;
         text-decoration: none; }
         footer .bottom-bar .socialmedia ul li a:hover {
           color: #d58e32; }
+  @media (max-width: 991.98px) {
+    footer .bottom-bar .socialmedia {
+      order: 3; } }
 
 .btn-main, .btn-main-small {
   background-color: #2a2a2a;
