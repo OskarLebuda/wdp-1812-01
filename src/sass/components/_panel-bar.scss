@@ -2,7 +2,7 @@
   margin-bottom: 30px;
   
   .row > * {
-    border-bottom: 4px solid $bright-background-two;
+    border-bottom: 4px solid $panel-bar--bar-color;
   }
 
   .heading {
@@ -75,7 +75,7 @@
       margin: 0;
       padding: 0 0 0 1rem;
       list-style: none;
-      background-color: $white;
+      background-color: $body-background-color;
       transform: translateY(15px);
 
       li {
@@ -87,7 +87,7 @@
           width: 13px;
           height: 13px;
           border-radius: 6px;
-          background-color: $bright-background;
+          background-color: $panel-bar--dots-inactive-background-color;
 
           &.active,
           &:hover {
