@@ -84,3 +84,6 @@ mockups
 
 # IntelliJ IDEA config files
 .idea
+
+# ignore folder with generated files
+dist
