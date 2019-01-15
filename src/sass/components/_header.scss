@@ -24,7 +24,7 @@ header {
     }
 
     .text-left ul li {
-      margin-right: 1.5rem;
+      margin-right: 0.5rem;
 
       i {
         margin-left: 5px
@@ -32,25 +32,38 @@ header {
     }
 
     .text-right ul li {
-      margin-left: 1.5rem;
+      margin-left: 0.5rem;
 
       i {
         margin-right: 5px
       }
     }
+
+    .text-right {
+      span {
+        display: none;
+      }
+    }
   }
 
-  .company-claim {
+  .company-claim-md {
+    display: none;
+  }
+
+  .company-claim, .company-claim-md {
     background-color: $header-bg;
 
     .container > .row {
       height: 145px;
+      padding-top: 25px;
     }
 
     .phone-number {
+      text-align: right;
+      margin-top: 10px;
       p {
         margin: 0;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 42px;
         color: rgb(216, 216, 216);
         font-weight: 500;
@@ -65,6 +78,13 @@ header {
       }
     }
 
+    .logo {
+      text-align: left;
+      img {
+        width: 140px;
+      }
+    }
+
     .cart {
 
       .cart-box {
@@ -75,6 +95,7 @@ header {
         flex-wrap: nowrap;
 
         .cart-icon {
+          @extend %animate;
           background-color: $primary;
           width: 55px;
           height: 50px;
@@ -88,6 +109,7 @@ header {
         }
 
         .cart-counter-block {
+          @extend %animate;
           background-color: $primary;
           height: 11px;
           width: 50%;
@@ -292,6 +314,61 @@ header {
           background-color: transparent;
           outline: none;
         }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  header {
+
+    .top-bar {
+
+      .text-left li {
+          margin-right: 1.5rem;
+        }
+
+      .text-right {
+
+        li {
+          margin-left: 1.5rem;
+        }
+
+        span {
+          display: inline-block;
+        }
+      }
+    }
+
+    .company-claim {
+      display: none;
+    }
+
+    .company-claim-md {
+      display: block;
+
+      .container > .row {
+        padding-top: 0;
+      }
+
+      .phone-number {
+        text-align: left;
+        order: 1;
+        font-size: 17px;
+        margin-top: 0;
+      }
+
+      .logo {
+        text-align: center;
+        order: 2;
+
+        img {
+          width: unset;
+        }
+      }
+
+      .cart {
+        order: 3;
       }
     }
   }
