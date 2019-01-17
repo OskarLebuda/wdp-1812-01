@@ -1,4 +1,6 @@
 header {
+  position: relative;
+  z-index: 1;
   .top-bar {
     background-color: $header-topbar-bg;
 
@@ -116,7 +118,8 @@ header {
     box-shadow: 2px 3.464px 6px rgba(1,2,2,0.2);
     background-color: #ffffff;
 
-    .container > .row {
+    
+     > .row {
       height: 84px;
     }
 

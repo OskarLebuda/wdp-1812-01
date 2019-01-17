@@ -1,6 +1,6 @@
 .panel-bar {
   margin-bottom: 30px;
-  
+
   .row > * {
     border-bottom: 4px solid #e2e2e2;
   }
@@ -14,11 +14,11 @@
       font-size: 20px;
       line-height: 38px;
       margin: 0;
-      letter-spacing: 1px
+      letter-spacing: 1px;
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -4px;
       left: 0;
@@ -33,27 +33,32 @@
       margin: 0;
       padding: 0;
       list-style: none;
+      justify-content: center;
       li {
         display: inline-block;
         margin: 0 0.5rem;
         font-weight: 600;
 
         a {
-          color: rgb(42,42,42);
+          color: rgb(42, 42, 42);
           position: relative;
           text-decoration: none;
           font-size: 18px;
           display: block;
 
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            border-bottom: 4px solid rgba(0, 0, 0, 0);
+          }
+
           &.active,
           &:hover {
             &::before {
-              content: '';
-              position: absolute;
-              bottom: -4px;
-              left: 0;
-              width: 100%;
-              border-bottom: 4px solid $primary;
+              border-color: $primary;
             }
           }
         }
@@ -82,6 +87,10 @@
 
           &.active,
           &:hover {
+            background-color: $primary;
+          }
+
+          &[active] {
             background-color: $primary;
           }
         }
