@@ -2,10 +2,7 @@
 
     var starContainers = document.getElementsByClassName('stars');
 
-    window.dev = {};
-    window.dev.starContainer = starContainer;
-
-    var setVotedStars = function (e) {
+    var setVotedStars = function(e) {
         e.target.parentElement.classList.add('voted');
         if (e.target.tagName === 'A') {
             var origStar = e.target;
