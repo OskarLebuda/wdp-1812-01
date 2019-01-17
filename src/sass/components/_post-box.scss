@@ -1,6 +1,16 @@
 .post-box {
   margin-bottom: 2rem;
-  
+
+  a {
+    text-decoration: none;
+    &:hover h5 {
+      color: $primary;
+    }
+    &:hover .btn-main {
+      background-color: $primary;
+    }
+  }
+
   .cover {
     padding: 70% 25px 0 25px;
     background: {
@@ -14,6 +24,7 @@
       display: flex;
       background-color: #ffffff;
       font-size: 14px;
+      color: #212529;
 
       & > * {
         flex: 1 1 auto;
@@ -33,22 +44,26 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
+      color: $text-color;
     }
 
     p {
       font-size: 14px;
       line-height: 24px;
-      color: rgb(103,103,103);
+      color: rgb(103, 103, 103);
       text-align: justify;
     }
 
     .more {
       text-align: center;
       padding-top: 30px;
+    }
+
+    .btn-main {
+      display: inline;
     }
   }
 }
