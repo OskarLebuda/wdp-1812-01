@@ -84,7 +84,7 @@
   <div class="menu-bar">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col">
+        <div class="col search">
           <form action="" class="search-form">
             <div class="category">
               <i class="fas fa-list-ul"></i>
@@ -99,6 +99,8 @@
             </div>
           </form>
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label class="menu-toggle--container" for="menu-toggle"><i class="fas fa-bars"></i></label>
         <div class="col-auto menu">
           <ul class="main-menu">
             <li><a href="#" class="active">Home</a></li>
@@ -136,7 +138,27 @@
                 </ul>
               </div>
             </li>
-            <li><a href="#">Chair</a></li>
+            <li><a href="#">Chair</a>
+              <div class="submenu-wrapper submenu">
+                <ul>
+                  <li><a href="#" class="submenu-heading">Chairs</a></li>
+                  <li><a href="#">Nowy Styl</a></li>
+                  <li><a href="#">Grospol</a></li>
+                  <li><a href="#">Profin</a></li>
+                  <li><a href="#">Svenbox</a></li>
+                  <li><a href="#">Snap</a></li>
+                  <li><a href="#">Marbet Style</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#" class="submenu-heading">Armchairs</a></li>
+                  <li><a href="#">Kler</a></li>
+                  <li><a href="#">Ergo</a></li>
+                  <li><a href="#">IKEA</a></li>
+                  <li><a href="#">9design</a></li>
+                  <li><a href="#">Eames</a></li>
+                </ul>
+              </div>
+            </li>
             <li><a href="#">Table</a></li>
             <li><a href="#">Sofa</a></li>
             <li><a href="#">Bedroom</a></li>
