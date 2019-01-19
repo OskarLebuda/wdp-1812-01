@@ -154,12 +154,14 @@ header {
     background-color: $menu-background-color;
 
     .container > .row {
-      height: 84px;
+      min-height: 84px;
+      position: relative;
     }
 
     .menu {
       display: flex;
       align-self: stretch;
+      order: 1;
 
       ul.main-menu {
         margin: 0;
@@ -212,10 +214,11 @@ header {
       background-clip: unset;
       position: absolute;
       top: 100%;
-      right: 15px;
       z-index: 1000;
       float: left;
       font-size: 14px;
+      left: 15px;
+      right: unset;
 
       .submenu-heading {
         text-transform: uppercase;
@@ -249,6 +252,10 @@ header {
           background-color: $primary;
         }
       }
+    }
+
+    .search {
+      order: 2;
     }
 
     .search-form {
@@ -314,14 +321,52 @@ header {
   }
 }
 
+@include media-breakpoint-up(xl) {
+  header {
+    .menu-bar {
+      .submenu {
+        right: 15px;
+        left: unset;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  header {
+    .menu-bar {
+      .search {
+        order: 1;
+      }
+      .menu {
+        order: 2;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(md) {
   header {
+    .menu-bar {
+      .search {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      .menu-toggle--container {
+        display: none;
+      }
+    }
 
     .top-bar {
 
       .text-left li {
-          margin-right: 1.5rem;
-        }
+        margin-right: 1.5rem;
+      }
 
       .text-right {
 
@@ -366,5 +411,81 @@ header {
         order: 3;
       }
     }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  header {
+    #menu-toggle {
+      display: none;
+    }
+
+    #menu-toggle:checked ~ label {
+      color: #212529;
+    }
+
+    #menu-toggle:not(:checked) ~ .menu {
+      opacity: 1;
+      min-height: 0;
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .menu-toggle--container {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      color: #212529;
+      order: 3;
+      z-index: 1;
+      text-align: right;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      right: 0;
+      top: 84px;
+      width: 70vw;
+      background-color: #ffffff;
+      z-index: 1;
+      ul {
+        width: 100%;
+      }
+      a {
+        width: 100%;
+      }
+    }
+
+    .main-menu {
+      flex-direction: column;
+
+      .submenu {
+        display: none;
+        position: relative;
+        left: unset;
+        top: unset;
+        flex-direction: column;
+        width: 100%;
+
+        ul {
+          padding: 10px 20px;
+        }
+
+        li {
+          width: 100%;
+        }
+      }
+
+      li {
+        flex-direction: column;
+      }
+
+    }
+
   }
 }
