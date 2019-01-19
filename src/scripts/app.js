@@ -3,14 +3,16 @@
     var containerState = {};
     var starContainers = document.getElementsByClassName('stars');
     var stars = document.querySelectorAll('.stars a');
+    var i;
 
     // function saves stars state when entering container or on save of new state
     // the state is later used to rollback state changes that occure on mouse hover
     var saveStarsState = function (e) {
+        var container;
         if (e.target.tagName === 'A') {
-            var container = e.target.parentNode;
+            container = e.target.parentNode;
         } else if (e.target.tagName === 'DIV') {
-            var container = e.target;
+            container = e.target;
         }
 
         if (container && container.classList.contains('voted')) {
@@ -20,7 +22,7 @@
         }
 
         if (container) {
-            for (var i = 0; i < container.childElementCount; i++) {
+            for (i = 0; i < container.childElementCount; i++) {
                 containerState['star' + i] = container.children[i].classList.contains('full');
             }
         }
@@ -36,7 +38,7 @@
         }
         while (star);
 
-        var star = originalStar.nextElementSibling;
+        star = originalStar.nextElementSibling;
         if (star) {
             do {
                 star.classList.remove('full');
@@ -71,7 +73,7 @@
             container.classList.remove('voted')
         }
 
-        for (var i = 0; i < container.childElementCount; i++) {
+        for (i = 0; i < container.childElementCount; i++) {
             if (containerState['star' + i] === true) {
                 container.children[i].classList.add('full');
             } else {
@@ -81,13 +83,14 @@
     };
 
     // finally, add event listeners to adequate objects
-    for (var i = 0; i < starContainers.length; i++) {
+
+    for (i = 0; i < starContainers.length; i++) {
         starContainers[i].addEventListener('click', setVotedStars);
         starContainers[i].addEventListener('mouseenter', saveStarsState);
     }
 
-    for (var i = 0; i < stars.length; i++) {
         stars[i].addEventListener('mouseenter', hoverOverStar);
+    for (i = 0; i < stars.length; i++) {
         stars[i].addEventListener('mouseleave', whenHoverIsOver);
     }
 
