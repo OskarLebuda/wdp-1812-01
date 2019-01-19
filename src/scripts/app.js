@@ -30,7 +30,8 @@
 
     // fills stars on the left from clicked (original) star
     // empties stars on the right from clicked (original) star
-    var letStarsShine = function (originalStar) {
+    var letStarsShine = function (e) {
+        var originalStar = e.target;
         var star = originalStar;
         do {
             star.classList.add('full');
@@ -51,14 +52,8 @@
     // when star is clicked, function adjusts stars state and saves it
     var setVotedStars = function (e) {
         e.target.parentElement.classList.add('voted');
-        letStarsShine(e.target);
+        letStarsShine(e);
         saveStarsState(e);
-    };
-
-    // when star is hovered, function adjusts stars state
-    var hoverOverStar = function (e) {
-        e.target.parentElement.classList.add('voted');
-        letStarsShine(e.target);
     };
 
     // when mouse leaves the star, whole star container goes back to original state
@@ -66,12 +61,6 @@
     var whenHoverIsOver = function (e) {
 
         var container = e.target.parentNode;
-
-        if (containerState.voted === true) {
-            container.classList.add('voted')
-        } else {
-            container.classList.remove('voted')
-        }
 
         for (i = 0; i < container.childElementCount; i++) {
             if (containerState['star' + i] === true) {
@@ -89,8 +78,8 @@
         starContainers[i].addEventListener('mouseenter', saveStarsState);
     }
 
-        stars[i].addEventListener('mouseenter', hoverOverStar);
     for (i = 0; i < stars.length; i++) {
+        stars[i].addEventListener('mouseenter', letStarsShine);
         stars[i].addEventListener('mouseleave', whenHoverIsOver);
     }
 
