@@ -110,7 +110,7 @@ header {
 
         .cart-counter-block {
           @extend %animate;
-          background-color: #d58e32;
+          background-color: $primary;
           height: 11px;
           width: 50%;
         }
@@ -175,7 +175,9 @@ header {
 
           &:hover {
             .submenu {
-              display: flex;
+              visibility: visible;
+              opacity: 1;
+
             }
           }
 
@@ -207,8 +209,11 @@ header {
     }
 
     .submenu {
-      display: none;
-      background-color: #363636;
+      @extend %animate;
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      background-color: $footer-bg;
       border-radius: 0;
       margin: 0;
       background-clip: unset;
