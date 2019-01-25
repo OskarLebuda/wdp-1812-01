@@ -12,7 +12,7 @@ header {
         line-height: 55px;
 
         a {
-          color: #ffffff;
+          color: $header-text-color;
           font-size: 13px;
 
           &:hover {
@@ -91,7 +91,7 @@ header {
         display: flex;
         justify-content: flex-end;
         position: relative;
-        color: #ffffff;
+        color: $header-text-color;
         flex-wrap: nowrap;
 
         .cart-icon {
@@ -110,7 +110,7 @@ header {
 
         .cart-counter-block {
           @extend %animate;
-          background-color: #d58e32;
+          background-color: $primary;
           height: 11px;
           width: 50%;
         }
@@ -151,7 +151,7 @@ header {
 
   .menu-bar {
     box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-    background-color: #ffffff;
+    background-color: $menu-background-color;
 
     .container > .row {
       min-height: 84px;
@@ -175,7 +175,9 @@ header {
 
           &:hover {
             .submenu {
-              display: flex;
+              visibility: visible;
+              opacity: 1;
+
             }
           }
 
@@ -187,14 +189,14 @@ header {
             text-decoration: none;
             display: flex;
             align-items: center;
-            border-top: 4px solid #ffffff;
+            border-top: 4px solid $menu-background-color;
             font-weight: 500;
             letter-spacing: 1px;
 
             &:hover,
             &.active {
               background-color: $primary;
-              color: #ffffff;
+              color: $menu-hover-text-color;
               border-color: $primary;
             }
 
@@ -207,8 +209,11 @@ header {
     }
 
     .submenu {
-      display: none;
-      background-color: #363636;
+      @extend %animate;
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      background-color: $footer-bg;
       border-radius: 0;
       margin: 0;
       background-clip: unset;

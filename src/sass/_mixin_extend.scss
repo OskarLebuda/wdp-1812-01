@@ -7,4 +7,9 @@
     visibility ease-in-out 250ms,
     opacity ease-in-out 250ms,
     border ease-in-out 250ms;
+
+}
+
+a {
+  @extend %animate;
 }
